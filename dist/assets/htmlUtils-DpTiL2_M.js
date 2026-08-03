@@ -1,1 +1,0 @@
-function c(e){if(!e)return"";const n=document.createElement("div"),r=e.replace(/<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi,""),t=document.createElement("textarea");return t.innerHTML=r,t.value||n.textContent||""}export{c as d};
