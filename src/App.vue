@@ -1,6 +1,6 @@
 <template>
   <div class="app-container">
-    <header><Nav></Nav></header>
+    <header class="app-header"><Nav></Nav></header>
     <main class="main-content">
       <router-view></router-view>
     </main>
@@ -91,8 +91,18 @@ img {
   min-height: 100vh;
 }
 
+.app-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background-color: #fff;
+}
+
 .main-content {
   flex: 1;
+  padding-top: 72px;
 }
 
 .app-footer {

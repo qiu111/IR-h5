@@ -107,6 +107,7 @@ watch(
   () => route.path,
   (newPath) => {
     activePath.value = newPath
+    show.value = false
   },
   { immediate: true }
 )
