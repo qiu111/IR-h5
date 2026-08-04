@@ -1,3 +1,22 @@
+src/
+├── api/                # 接口请求层
+│   └── user.ts         # 用户相关接口
+├── assets/             # 静态资源
+├── components/         # 通用组件
+├── composables/        # 组合式函数
+├── mock/               # Mock 数据
+│   ├── index.ts        # Mock 统一导出
+│   └── user.ts         # 用户模块 Mock
+├── router/             # 路由配置
+├── stores/             # Pinia 状态管理
+├── styles/             # 全局样式
+├── utils/              # 工具函数
+├── views/              # 页面级组件
+├── App.vue             # 根组件
+├── env.d.ts            # 环境变量类型声明
+└── main.ts             # 入口文件
+
+
 # Vue 3 + TypeScript + Vite
 这个脚手架配置包含了现代 Vue 3 开发所需的核心工具和配置，包括：
 Vue 3 基础
@@ -22,3 +41,20 @@ Mock 数据替换后端 API 接口
 3、修改 src/api/user.ts,根据 VITE_USE_MOCK 切换 mock/实际接口  
 4、确保 request.ts 的baseURL正确配置
 5、添加类型声明支持import.meta.env.VITE_USE_MOCK
+
+
+Nginx 部署示例
+server {
+  listen 80;
+  server_name your-domain.com;
+  root /usr/share/nginx/html;
+  index index.html;
+
+  location / {
+    try_files $uri $uri/ /index.html;
+  }
+
+  location /api {
+    proxy_pass http://backend-server;
+  }
+}
