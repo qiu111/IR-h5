@@ -19,7 +19,7 @@
 3、修改 src/api/user.ts 使用 mock 数据替代真实请求：import { mockUser } from '@/mock/user';
 ```
 
-### 用环境变量切换：VITE_USE_MOCK=true 时走 mock，false 时走真实接口
+### 用环境变量切换：VITE_USE_MOCK=true 调用 mock，false 调用真实接口
 ```
 1、在.env.development 中添加 VITE_USE_MOCK=true   ──►  返回 src/mock/ 中的模拟数据
 2、在.env.production 中添加 VITE_USE_MOCK=false   ──►  发起真实 HTTP 请求到 VITE_API_BASE_URL
