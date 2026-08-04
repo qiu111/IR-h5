@@ -1,4 +1,5 @@
-import { createRouter, createWebHistory } from 'vue-router'
+// import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router'
 import { getNav } from '@/api/user'
 
 // 静态路由
@@ -139,7 +140,8 @@ const staticRoutes = [
 ]
 
 const router = createRouter({
-  history: createWebHistory('/'),
+  // history: createWebHistory('/'),
+  history: createWebHashHistory(),
   routes: staticRoutes
 })
 

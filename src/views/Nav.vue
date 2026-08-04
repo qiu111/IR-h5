@@ -1,7 +1,7 @@
 <template>
   <div class="app-head">
     <div class="logo-container">
-      <a href="/"><img src="@/assets/vue.svg" alt="Demo Project Logo" /></a>
+      <a href="/"><img src="@/assets/vite.svg" alt="Demo Project Logo" /></a>
     </div>
     <van-icon class="logo-nav" name="bars" size="28" @click="showPopup" />
   </div>
