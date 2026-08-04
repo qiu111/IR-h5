@@ -1,15 +1,15 @@
 ###  Vue 3 + TypeScript + Vite
 ```
- Vue 3 — 使用 Composition API + `<script setup>` 语法糖
+ Vue 3：使用 Composition API + `<script setup>` 语法糖
  TypeScript
- Vite — 极速启动与热更新
- ESLint + Prettier — 统一代码风格
- Vue Router 4 — 路由管理
- Pinia — 状态管理
- Axios — 封装 HTTP 请求
- Sass — CSS 预处理器
- PostCSS + Rem — 移动端 Rem 适配方案
- Mock 数据 — 环境变量一键切换 Mock / 真实接口
+ Vite：极速启动与热更新
+ ESLint + Prettier：统一代码风格
+ Vue Router 4：路由管理
+ Pinia：状态管理
+ Axios：封装 HTTP 请求 
+ Sass：CSS 预处理器    
+ PostCSS + Rem：移动端 Rem 适配方案
+ Mock 数据：环境变量一键切换 Mock / 真实接口
  ```
 
 ### Mock 数据替换后端 API 接口
