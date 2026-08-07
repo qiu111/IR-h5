@@ -1,1 +1,0 @@
-import{Y as e,K as s,O as a,U as o,u as r}from"./vendor-vue-DP-ckD7c.js";import{_ as c}from"./index-DI5ZOkSJ.js";const n={class:"nav-text"},_={__name:"NavText",setup(u){const t=e();return(p,m)=>(a(),s("div",n,o(r(t).currentRoute.value.name),1))}},v=c(_,[["__scopeId","data-v-dbb42c06"]]);export{v as N};
